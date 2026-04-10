@@ -1,0 +1,293 @@
+/* ---------- Base Styles ---------- */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    color: #222;
+    background-color: #fff;
+    line-height: 1.6;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin-top: 0;
+}
+
+h1 {
+    font-size: 2.027rem;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 1.802rem;
+    line-height: 1.2;
+}
+
+h3 {
+    font-size: 1.266rem;
+    line-height: 1.3;
+}
+
+a {
+    color: #222;
+    text-decoration: none;
+}
+
+.container {
+    width: min(100% - 2rem, 1200px);
+    margin-inline: auto;
+}
+
+/* ---------- Header ---------- */
+
+.site-header {
+    border-bottom: 1px solid #f1f1f1;
+    background-color: #fff;
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem 0;
+}
+
+.logo img {
+    width: 110px;
+}
+
+.site-nav ul {
+    display: flex;
+    gap: 1.25rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.site-nav a {
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+/* ---------- Product Section ---------- */
+
+.product-section {
+    padding: 2rem 0;
+}
+
+.product-layout {
+    display: grid;
+    gap: 2rem;
+}
+
+.product-gallery > img {
+    border-radius: 1rem;
+    background-color: #f8fafc;
+}
+
+.thumbnail-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.thumbnail-grid img {
+    border-radius: 1rem;
+    background-color: #f8fafc;
+}
+
+.eyebrow {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.product-subtitle {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.price {
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #000;
+}
+
+.product-description {
+    margin-bottom: 1rem;
+}
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.9rem 1.5rem;
+    border-radius: 999px;
+    background-color: #000;
+    color: #fff;
+    font-weight: 600;
+}
+
+/* ---------- Story Section ---------- */
+
+.story-section {
+    padding: 2rem 0;
+    background-color: #f8fafc;
+}
+
+.story-layout {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.story-text {
+    max-width: 800px;
+}
+
+/* ---------- Reviews Section ---------- */
+
+.reviews-section {
+    padding: 2rem 0;
+}
+
+.reviews-grid {
+    display: grid;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.review-card {
+    padding: 1.5rem;
+    border-radius: 1rem;
+    background-color: #f8fafc;
+}
+
+.review-card p {
+    margin-bottom: 1rem;
+}
+
+.review-card h3 {
+    margin-bottom: 0;
+}
+
+/* ---------- Related Products ---------- */
+
+.related-section {
+    padding: 2rem 0 3rem;
+}
+
+.related-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.product-card img {
+    border-radius: 1rem;
+    background-color: #f8fafc;
+    margin-bottom: 0.75rem;
+}
+
+.product-card h3 {
+    margin-bottom: 0.25rem;
+    font-size: 1rem;
+}
+
+.product-card p {
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
+/* ---------- Footer ---------- */
+
+.site-footer {
+    padding: 1.5rem 0;
+    border-top: 1px solid #f1f1f1;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+/* ---------- Media Query: 768px ---------- */
+
+@media (min-width: 768px) {
+    .product-section {
+        padding: 3rem 0;
+    }
+
+    .product-layout {
+        grid-template-columns: 1.1fr 0.9fr;
+        align-items: start;
+    }
+
+    .story-section,
+    .reviews-section,
+    .related-section {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    .reviews-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .related-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* ---------- Media Query: 960px ---------- */
+
+@media (min-width: 960px) {
+    .header-inner {
+        padding: 1.25rem 0;
+    }
+
+    .logo img {
+        width: 125px;
+    }
+
+    .product-layout {
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+    }
+
+    .product-info {
+        padding-top: 1rem;
+    }
+
+    .story-layout {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .story-text {
+        grid-column: 1 / 2;
+    }
+
+    .site-nav ul {
+        gap: 2rem;
+    }
+}
