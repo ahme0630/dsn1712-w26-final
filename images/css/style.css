@@ -1,0 +1,222 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #222;
+  background: #fff;
+  line-height: 1.6;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+.site-header {
+  padding: 1.25rem 0;
+  background: #fff;
+}
+
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo {
+  width: 120px;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 1.25rem;
+}
+
+.nav-list a {
+  color: #000;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.product-section {
+  padding: 2rem 0 3rem;
+}
+
+.product-grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.product-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+}
+
+.product-info h1 {
+  font-size: 2.027rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.product-label {
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 0.25rem;
+}
+
+.product-flavours {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.price {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.product-info p {
+  margin-bottom: 1rem;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #000;
+  color: #fff;
+  padding: 0.75rem 1.25rem;
+  font-weight: 600;
+}
+
+.story-section {
+  background: #f8fafc;
+  padding: 3rem 0;
+}
+
+.story-container h2,
+.reviews-section h2,
+.related-section h2 {
+  font-size: 1.802rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.story-columns {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.reviews-section {
+  background: #000;
+  color: #fff;
+  padding: 3rem 0;
+}
+
+.reviews-grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.review-text {
+  margin-bottom: 1rem;
+}
+
+.review-name {
+  font-style: italic;
+  font-weight: 600;
+}
+
+.related-section {
+  background: #f8fafc;
+  padding: 3rem 0;
+}
+
+.related-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.related-card {
+  background: #fff;
+}
+
+.card-text {
+  background: #f8fafc;
+  text-align: center;
+  padding: 1rem;
+}
+
+.card-text h3 {
+  font-size: 1.266rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-text p {
+  font-weight: 600;
+}
+
+.site-footer {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+}
+
+/* 768px and above */
+@media screen and (min-width: 768px) {
+  .product-grid {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+
+  .story-columns {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .reviews-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .related-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* 960px and above */
+@media screen and (min-width: 960px) {
+  .product-grid {
+    grid-template-columns: 1.05fr 0.95fr;
+  }
+
+  .related-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .product-section {
+    padding-top: 3rem;
+  }
+
+  .product-info {
+    padding-top: 0.5rem;
+  }
+}
